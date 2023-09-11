@@ -39,6 +39,9 @@ namespace ProductApps
             {
                 MessageBox.Show("Enter data again", "Data Entry Error");
             }
+
+            cProduct.calcTotalCharge();
+            totalChargeTextBlock.Text = Convert.ToString(cProduct.TotalCharge);
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
